@@ -1,0 +1,31 @@
+empty_file.o: \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/misc/empty_file.c \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/boards/espressif/esp32c3_devkitc/esp32c3_devkitc.dts \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/dts/riscv/espressif/esp32c3/esp32c3_wroom_n4.dtsi \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/dts/riscv/espressif/esp32c3/esp32c3_common.dtsi \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/dts/common/mem.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/dts/common/freq.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/dt-bindings/adc/adc.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/dt-bindings/dt-util.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/sys/util_macro.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/sys/util_internal.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/sys/util_loops.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/sys/util_listify.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/sys/util_internal_is_eq.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_inc.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_dec.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_x2.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/dt-bindings/gpio/gpio.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/dt-bindings/i2c/i2c.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/dt-bindings/interrupt-controller/esp-esp32c3-intmux.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/dt-bindings/clock/esp32c3_clock.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp32-pinctrl.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp-pinctrl-common.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp32-gpio-sigmap.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/boards/espressif/esp32c3_devkitc/esp32c3_devkitc-pinctrl.dtsi \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp32c3-pinctrl.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp32c3-gpio-sigmap.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/dts/vendor/espressif/partitions_0x0_default.dtsi \
+ /home/thaiza.pinheiro/zephyrproject/zephyr/dts/vendor/espressif/partitions_0x0_default_4M.dtsi \
+ /home/thaiza.pinheiro/zephyrproject/estudos/button_led/boards/esp32c3_devkitc.overlay

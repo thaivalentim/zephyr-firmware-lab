@@ -1,0 +1,22 @@
+# Build artifacts
+build/
+
+# Python virtual environment
+.venv/
+
+# VS Code local settings
+.vscode/
+
+# Zephyr / west cache and workspace metadata
+.west/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Editor and OS temporary files
+*~
+.DS_Store
+Thumbs.db

@@ -1,0 +1,62 @@
+cmake:
+  application:
+    configuration-dir: '/home/thaiza.pinheiro/zephyrproject/estudos/button_led'
+    source-dir: '/home/thaiza.pinheiro/zephyrproject/estudos/button_led'
+  board:
+    name: 'esp32c3_devkitc'
+    path:
+     - '/home/thaiza.pinheiro/zephyrproject/zephyr/boards/espressif/esp32c3_devkitc'
+    qualifiers: 'esp32c3'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/thaiza.pinheiro/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/home/thaiza.pinheiro/zephyrproject/zephyr/boards/espressif/esp32c3_devkitc/esp32c3_devkitc.dts'
+     - '/home/thaiza.pinheiro/zephyrproject/estudos/button_led/boards/esp32c3_devkitc.overlay'
+    include-dirs:
+     - '/home/thaiza.pinheiro/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/thaiza.pinheiro/zephyrproject/modules/hal/atmel/include'
+     - '/home/thaiza.pinheiro/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/thaiza.pinheiro/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/thaiza.pinheiro/zephyrproject/modules/hal/gigadevice/include'
+     - '/home/thaiza.pinheiro/zephyrproject/modules/hal/microchip/include'
+     - '/home/thaiza.pinheiro/zephyrproject/modules/hal/microchip/dts'
+     - '/home/thaiza.pinheiro/zephyrproject/modules/hal/nuvoton/dts'
+     - '/home/thaiza.pinheiro/zephyrproject/modules/hal/nxp/dts'
+     - '/home/thaiza.pinheiro/zephyrproject/modules/hal/stm32/dts'
+     - '/home/thaiza.pinheiro/zephyrproject/modules/hal/ti/dts'
+     - '/home/thaiza.pinheiro/zephyrproject/estudos/button_led/include'
+     - '/home/thaiza.pinheiro/zephyrproject/zephyr/include'
+     - '/home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr'
+     - '/home/thaiza.pinheiro/zephyrproject/zephyr/dts/common'
+     - '/home/thaiza.pinheiro/zephyrproject/zephyr/dts/vendor'
+     - '/home/thaiza.pinheiro/zephyrproject/zephyr/dts/rx'
+     - '/home/thaiza.pinheiro/zephyrproject/zephyr/dts/x86'
+     - '/home/thaiza.pinheiro/zephyrproject/zephyr/dts/xtensa'
+     - '/home/thaiza.pinheiro/zephyrproject/zephyr/dts/sparc'
+     - '/home/thaiza.pinheiro/zephyrproject/zephyr/dts/riscv'
+     - '/home/thaiza.pinheiro/zephyrproject/zephyr/dts/posix'
+     - '/home/thaiza.pinheiro/zephyrproject/zephyr/dts/arm64'
+     - '/home/thaiza.pinheiro/zephyrproject/zephyr/dts/arm'
+     - '/home/thaiza.pinheiro/zephyrproject/zephyr/dts/arc'
+     - '/home/thaiza.pinheiro/zephyrproject/zephyr/dts'
+    user-files:
+     - '/home/thaiza.pinheiro/zephyrproject/estudos/button_led/boards/esp32c3_devkitc.overlay'
+  kconfig:
+    files:
+     - '/home/thaiza.pinheiro/zephyrproject/zephyr/boards/espressif/esp32c3_devkitc/esp32c3_devkitc_defconfig'
+     - '/home/thaiza.pinheiro/zephyrproject/estudos/button_led/prj.conf'
+    user-files:
+     - '/home/thaiza.pinheiro/zephyrproject/estudos/button_led/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/thaiza.pinheiro/zephyr-sdk-1.0.1'
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: '/home/thaiza.pinheiro/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/thaiza.pinheiro/zephyrproject/.venv/bin/west build -b esp32c3_devkitc -p always'
+  topdir: '/home/thaiza.pinheiro/zephyrproject'
+  version: '1.5.0'
