@@ -1,7 +1,15 @@
+/*
+Logging thread module: event log buffering and output.
+Uses FIFO queue and memory slab for thread-safe, ISR-safe event logging.
+Consumer thread dequeues and outputs messages to console in order.
+*/
+
 #include <zephyr/kernel.h>
 #include <zephyr/sys/printk.h>
 
-/* Definições da Logging Thread estão abaixo */
+#include "logging_thread.h"
+
+/* Logging thread configuration */
 #define STACK_SIZE 500
 #define PRIORITY 2
 
@@ -9,40 +17,13 @@ K_THREAD_STACK_DEFINE(log_stack, STACK_SIZE);
 
 static struct k_thread log_thread;
 
-/* Declaração do objeto FIFO
-para armazenar as mensagens de log */
+/* FIFO queue for log message buffering */
 struct k_fifo queue;
 
-/* Indica qual é a fonte da mensagem */
-typedef enum {
-    LOG_SRC_MAIN,
-    LOG_SRC_BUTTON,
-    LOG_SRC_LED_THREAD,
-} log_source_t;
-
-/* Indica qual é o evento*/
-typedef enum {
-    LOG_EVT_INIT,
-    LOG_EVT_BUTTON_PRESS,
-    LOG_EVT_MODE_CHANGE,
-    LOG_EVT_LED_TOGGLE,
-    LOG_EVT_ERROR,
-    LOG_EVT_INFO,
-} log_event_t;
-
-/* Estrutura da mensagem */
-typedef struct {
-    void *fifo_reserved;
-    log_source_t source;
-    log_event_t event;
-    int32_t value;
-    uint32_t timestamp;
-} log_message_t;
-
-/* Define um bloco de memória para alocação de mensagens */
+/* Memory slab for log message allocation */
 K_MEM_SLAB_DEFINE(log_slab, sizeof(log_message_t), 10, 4);
 
-/* Função para módulos produtores*/
+/* Producer: allocate and queue a log message (safe from ISR context) */
 void fifo_producer(log_source_t source, log_event_t event, int32_t value) {
     log_message_t *tx_data;
 
@@ -56,7 +37,7 @@ void fifo_producer(log_source_t source, log_event_t event, int32_t value) {
     }
 }
 
-/* Função para módulos consumidores (logging_thread apenas) */
+/* Consumer thread: dequeues log messages and outputs them */
 void fifo_consumer(void *p1, void *p2, void *p3) {
     ARG_UNUSED(p1);
     ARG_UNUSED(p2);
@@ -64,25 +45,29 @@ void fifo_consumer(void *p1, void *p2, void *p3) {
 
     log_message_t *rx_data;
 
-    while(1) {
+    printk("[LOGGING THREAD] Started\n");
+
+    while (1) {
         rx_data = k_fifo_get(&queue, K_FOREVER);
 
-        printk("[LOGGING THREAD] src=%d, evt=%d, val=%d, ts%u ms\n", 
-                rx_data-> source,
+        /* Format and print log message */
+        printk("[LOG] src=%u evt=%u val=%d ts=%u ms\n", 
+                rx_data->source,
                 rx_data->event,
                 rx_data->value,
                 rx_data->timestamp);
         
+        /* Free allocated memory back to slab */
         k_mem_slab_free(&log_slab, (void **)&rx_data);
     }
 }
 
-/* Inicializa a queue*/
+/* Initialize FIFO queue */
 void fifo_init(void) {
     k_fifo_init(&queue);
 }
 
-/* Inicializa a thread */
+/* Initialize logging thread */
 void log_thread_init(void) {
     k_thread_create(&log_thread, log_stack, STACK_SIZE,
                     fifo_consumer, NULL, NULL, NULL,

@@ -1,34 +1,36 @@
-/* 
-This aplication have the purpose to control a led with a button,
-in order for the developer to learn how Zephyr works and how to use it.
+/*
+LED module: low-level GPIO control abstraction.
+Encapsulates the LED device configuration and provides basic control functions.
 */
 
 /*Zephyr*/
 #include <zephyr/kernel.h>
 #include <zephyr/drivers/gpio.h>
 
-/* A estrutura obtém informações sobre o pino GPIO
-usado para controlar o led por meio da device tree. */
+/* GPIO device tree specification for LED */
 static const struct gpio_dt_spec led = 
                 GPIO_DT_SPEC_GET(DT_ALIAS(led0), gpios);
 
+/* Initialize LED GPIO as output */
 int led_init(void) {
-    if(!device_is_ready(led.port)) {
-        return -ENODEV; // -ENODEV signifca "No Device"
+    if (!device_is_ready(led.port)) {
+        return -ENODEV;
     }
 
     int ret = gpio_pin_configure_dt(&led, GPIO_OUTPUT_INACTIVE);
-    if(ret < 0) {
-        return ret; // Retorna o código de erro específico se a configuração do pino falhar
+    if (ret < 0) {
+        return ret;
     }
 
-    return 0; // 0 significa sucesso
+    return 0;
 }
 
+/* Set LED to ON state */
 void led_on(void) {
     gpio_pin_set_dt(&led, 1);
 }
 
+/* Set LED to OFF state */
 void led_off(void) {
     gpio_pin_set_dt(&led, 0);
 }

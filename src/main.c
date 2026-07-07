@@ -16,29 +16,30 @@
 
 int main(void)
 {
-	/* Declarações gerais */
 	int led_ret, button_ret;
 	
+	/* Initialize hardware resources */
 	led_ret = led_init();
+	if (led_ret < 0) {
+		printk("[MAIN] LED initialization failed: %d\n", led_ret);
+		return led_ret;
+	}
+	
 	button_ret = button_init();
-
-	/* Inicializa os dispositivos */
-	if(led_ret < 0 || button_ret < 0) {
-		printk("A inicialização falhou: %d, %d \n", led_ret, button_ret);
-
-		while(1) {
-			k_msleep(1000);
-		}
+	if (button_ret < 0) {
+		printk("[MAIN] Button initialization failed: %d\n", button_ret);
+		return button_ret;
 	}
 
-	/* Inicializa as threads e a queue */
+	/* Initialize application infrastructure */
 	fifo_init();
 	led_thread_init();
 	log_thread_init();
 
+	/* Log application start */
 	fifo_producer(LOG_SRC_MAIN, LOG_EVT_INIT, 0);
 
-	printk("[MAIN THREAD] executando! \n");
+	printk("[MAIN] Application initialized successfully\n");
 
 	return 0;
 }

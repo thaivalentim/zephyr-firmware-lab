@@ -1,18 +1,20 @@
 sample:
-  description: Hello World sample, the simplest Zephyr
-    application
-  name: hello world
+  description: Zephyr Firmware Lab - event-driven LED control with button interrupt
+  name: zephyr firmware lab
 common:
-  min_ram: 2
-  min_flash: 16
-  tags: introduction
+  min_ram: 16
+  min_flash: 256
+  tags: embedded firmware interrupt event-driven
   integration_platforms:
-    - native_sim
+    - esp32c3_devkitc
   harness: console
   harness_config:
-    type: one_line
+    type: multi_line
+    ordered: false
     regex:
-      - "Hello World! (.*)"
+      - "\\[MAIN\\] Application initialized"
+      - "\\[LED THREAD\\] Running"
+      - "\\[LOGGING THREAD\\] Started"
 tests:
-  sample.basic.helloworld:
-    tags: introduction
+  sample.zephyr_firmware_lab.basic:
+    tags: embedded firmware interrupt
