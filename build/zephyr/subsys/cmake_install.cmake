@@ -39,106 +39,106 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/authentication/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/authentication/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/canbus/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/canbus/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/debug/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/debug/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/fs/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/fs/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/gnss/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/gnss/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/instrumentation/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/instrumentation/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/ipc/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/ipc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/kvss/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/kvss/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/logging/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/logging/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/mem_mgmt/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/mem_mgmt/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/mgmt/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/mgmt/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/pm/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/pm/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/pmci/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/pmci/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/portability/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/portability/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/random/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/random/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/sd/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/sd/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/stats/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/stats/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/storage/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/storage/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/testsuite/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/testsuite/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/tracing/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/tracing/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/usb/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/usb/cmake_install.cmake")
 endif()
 

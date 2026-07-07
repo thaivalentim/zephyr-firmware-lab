@@ -676,7 +676,7 @@
  status = "okay";
 };
 # 0 "<command-line>" 2
-# 1 "/home/thaiza.pinheiro/zephyrproject/estudos/button_led/boards/esp32c3_devkitc.overlay" 1
+# 1 "/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/boards/esp32c3_devkitc.overlay" 1
 / {
     aliases {
         led0 = &led0;

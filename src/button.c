@@ -10,6 +10,7 @@ in order for the developer to learn how Zephyr works and how to use it.
 
 /* Applicação */
 #include "app_events.h"
+#include "logging_thread.h"
 
 /* A estrutura obtém informações sobre o pino GPIO
 usado para controlar o led por meio da device tree. */
@@ -23,12 +24,12 @@ static void button_pressed(
                         const struct device *dev, 
                         struct gpio_callback *cb,
                         gpio_port_pins_t pins) {
-
     ARG_UNUSED(dev);
     ARG_UNUSED(cb);
     ARG_UNUSED(pins);
 
-    app_event_publish(APP_EVENT_BUTTON);
+    app_event_publish();
+    fifo_producer(LOG_SRC_BUTTON, LOG_EVT_BUTTON_PRESS, 0);
 }
 
 /* Inicializa o GPIO associado ao botão */
@@ -63,16 +64,3 @@ int button_init(void) {
 
     return 0; // 0 significa sucesso
 }
-
-/* 
-int button_get_state(void) {
-    int value = gpio_pin_get_dt(&button); // Lê o nível lógico do pino 
-    if (value < 0) {
-        return value; 
-        // Retorna o código de erro específico se a leitura do pino falhar
-    }
-    return (value == 1); 
-        // Retorna 1 se o botão estiver pressionado, caso contrário, retorna 0
-        // O botão é considerado pressionado quando o valor lido é 1 (ativo-alto)
-}
-*/

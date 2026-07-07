@@ -13,7 +13,7 @@
 		sw0 = &user_button1;   /* in zephyr/boards/espressif/esp32c3_devkitc/esp32c3_devkitc.dts:28 */
 		i2c-0 = &i2c0;         /* in zephyr/boards/espressif/esp32c3_devkitc/esp32c3_devkitc.dts:29 */
 		watchdog0 = &wdt0;     /* in zephyr/boards/espressif/esp32c3_devkitc/esp32c3_devkitc.dts:30 */
-		led0 = &led0;          /* in estudos/button_led/boards/esp32c3_devkitc.overlay:3 */
+		led0 = &led0;          /* in estudos/zephyr-firmware-lab/boards/esp32c3_devkitc.overlay:3 */
 	};
 
 	/* node '/chosen' defined in zephyr/dts/riscv/espressif/esp32c3/esp32c3_common.dtsi:23 */
@@ -584,14 +584,14 @@
 		};
 	};
 
-	/* node '/leds' defined in estudos/button_led/boards/esp32c3_devkitc.overlay:6 */
+	/* node '/leds' defined in estudos/zephyr-firmware-lab/boards/esp32c3_devkitc.overlay:6 */
 	leds {
-		compatible = "gpio-leds"; /* in estudos/button_led/boards/esp32c3_devkitc.overlay:7 */
+		compatible = "gpio-leds"; /* in estudos/zephyr-firmware-lab/boards/esp32c3_devkitc.overlay:7 */
 
-		/* node '/leds/led_0' defined in estudos/button_led/boards/esp32c3_devkitc.overlay:8 */
+		/* node '/leds/led_0' defined in estudos/zephyr-firmware-lab/boards/esp32c3_devkitc.overlay:8 */
 		led0: led_0 {
-			gpios = < &gpio0 0x2 0x0 >; /* in estudos/button_led/boards/esp32c3_devkitc.overlay:9 */
-			label = "LED Vermelho";     /* in estudos/button_led/boards/esp32c3_devkitc.overlay:10 */
+			gpios = < &gpio0 0x2 0x0 >; /* in estudos/zephyr-firmware-lab/boards/esp32c3_devkitc.overlay:9 */
+			label = "LED Vermelho";     /* in estudos/zephyr-firmware-lab/boards/esp32c3_devkitc.overlay:10 */
 		};
 	};
 };

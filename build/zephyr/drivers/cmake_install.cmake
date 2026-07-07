@@ -39,61 +39,61 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/drivers/firmware/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/drivers/firmware/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/drivers/interrupt_controller/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/drivers/interrupt_controller/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/drivers/misc/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/drivers/misc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/drivers/pcie/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/drivers/pcie/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/drivers/usb/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/drivers/usb/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/drivers/usb_c/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/drivers/usb_c/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/drivers/clock_control/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/drivers/clock_control/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/drivers/console/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/drivers/console/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/drivers/gpio/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/drivers/gpio/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/drivers/pinctrl/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/drivers/pinctrl/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/drivers/serial/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/drivers/serial/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/drivers/timer/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/drivers/timer/cmake_install.cmake")
 endif()
 

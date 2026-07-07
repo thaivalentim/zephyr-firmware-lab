@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/portability/posix/c_lang_support_r/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/portability/posix/c_lang_support_r/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/zephyr/subsys/portability/posix/c_lib_ext/cmake_install.cmake")
+  include("/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/zephyr/subsys/portability/posix/c_lib_ext/cmake_install.cmake")
 endif()
 

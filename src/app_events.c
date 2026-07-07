@@ -1,23 +1,13 @@
 #include "app_events.h"
 
-/* Cria o objeto de evento em tempo de compilação*/
-K_EVENT_DEFINE(app_events);
+static K_SEM_DEFINE(app_event_sem, 0, K_SEM_MAX_LIMIT);
 
-typedef uint32_t app_event_t; /* Tipo do evento */
-
-/* Permite que outros módulos publiquem eventos */
-void app_event_publish(uint32_t events)
+void app_event_publish(void)
 {
-    k_event_post(&app_events, events);
+    k_sem_give(&app_event_sem);
 }
 
-/* Aguarda por determinado evento */
-app_event_t app_event_wait(uint32_t events)
+int app_event_take(k_timeout_t timeout)
 {
-    return k_event_wait(
-        &app_events,
-        events,
-        true,
-        K_FOREVER
-    );
+    return k_sem_take(&app_event_sem, timeout);
 }

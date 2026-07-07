@@ -28,4 +28,4 @@ empty_file.o: \
  /home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h \
  /home/thaiza.pinheiro/zephyrproject/zephyr/dts/vendor/espressif/partitions_0x0_default.dtsi \
  /home/thaiza.pinheiro/zephyrproject/zephyr/dts/vendor/espressif/partitions_0x0_default_4M.dtsi \
- /home/thaiza.pinheiro/zephyrproject/estudos/button_led/boards/esp32c3_devkitc.overlay
+ /home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/boards/esp32c3_devkitc.overlay

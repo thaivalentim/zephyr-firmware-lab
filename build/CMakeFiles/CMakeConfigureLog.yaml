@@ -37,7 +37,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        /home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+        /home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/CMakeFiles/3.28.3/CompilerIdC/a.out
       
   -
     kind: "message-v1"
@@ -63,7 +63,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /home/thaiza.pinheiro/zephyrproject/estudos/button_led/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+        /home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
       
   -
     kind: "message-v1"

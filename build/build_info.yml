@@ -1,7 +1,7 @@
 cmake:
   application:
-    configuration-dir: '/home/thaiza.pinheiro/zephyrproject/estudos/button_led'
-    source-dir: '/home/thaiza.pinheiro/zephyrproject/estudos/button_led'
+    configuration-dir: '/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab'
+    source-dir: '/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab'
   board:
     name: 'esp32c3_devkitc'
     path:
@@ -13,7 +13,7 @@ cmake:
      - '/home/thaiza.pinheiro/zephyrproject/zephyr/dts/bindings'
     files:
      - '/home/thaiza.pinheiro/zephyrproject/zephyr/boards/espressif/esp32c3_devkitc/esp32c3_devkitc.dts'
-     - '/home/thaiza.pinheiro/zephyrproject/estudos/button_led/boards/esp32c3_devkitc.overlay'
+     - '/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/boards/esp32c3_devkitc.overlay'
     include-dirs:
      - '/home/thaiza.pinheiro/zephyrproject/modules/hal/ambiq/dts'
      - '/home/thaiza.pinheiro/zephyrproject/modules/hal/atmel/include'
@@ -26,7 +26,7 @@ cmake:
      - '/home/thaiza.pinheiro/zephyrproject/modules/hal/nxp/dts'
      - '/home/thaiza.pinheiro/zephyrproject/modules/hal/stm32/dts'
      - '/home/thaiza.pinheiro/zephyrproject/modules/hal/ti/dts'
-     - '/home/thaiza.pinheiro/zephyrproject/estudos/button_led/include'
+     - '/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/include'
      - '/home/thaiza.pinheiro/zephyrproject/zephyr/include'
      - '/home/thaiza.pinheiro/zephyrproject/zephyr/include/zephyr'
      - '/home/thaiza.pinheiro/zephyrproject/zephyr/dts/common'
@@ -42,13 +42,13 @@ cmake:
      - '/home/thaiza.pinheiro/zephyrproject/zephyr/dts/arc'
      - '/home/thaiza.pinheiro/zephyrproject/zephyr/dts'
     user-files:
-     - '/home/thaiza.pinheiro/zephyrproject/estudos/button_led/boards/esp32c3_devkitc.overlay'
+     - '/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/boards/esp32c3_devkitc.overlay'
   kconfig:
     files:
      - '/home/thaiza.pinheiro/zephyrproject/zephyr/boards/espressif/esp32c3_devkitc/esp32c3_devkitc_defconfig'
-     - '/home/thaiza.pinheiro/zephyrproject/estudos/button_led/prj.conf'
+     - '/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/prj.conf'
     user-files:
-     - '/home/thaiza.pinheiro/zephyrproject/estudos/button_led/prj.conf'
+     - '/home/thaiza.pinheiro/zephyrproject/estudos/zephyr-firmware-lab/prj.conf'
   toolchain:
     name: 'zephyr'
     path: '/home/thaiza.pinheiro/zephyr-sdk-1.0.1'
